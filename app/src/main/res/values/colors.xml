@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#673AB7</color>
+    <color name="colorPrimaryDark">#4527A0</color>
+    <color name="colorPrimaryLight">#B39DDB</color>
+    <color name="colorAccent">#C51162</color>
+
+    <color name="item_bg_collapsed">#FAF4FF</color>
+    <color name="item_bg_expanded">@android:color/white</color>
+
+    <!-- FILTER PLUGIN -->
+    <color name="filter_icon_color">#89AFC2</color>
+    <color name="bottom_bar_color">#33779C</color>
+    <color name="filter_icon_active_color">@android:color/white</color>
+
+</resources>

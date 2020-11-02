@@ -1,0 +1,64 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+
+    <!-- CUSTOM DIMENS -->
+    <dimen name="dialog_horizontal_padding">16dp</dimen>
+    <dimen name="dialog_vertical_padding">20dp</dimen>
+    <dimen name="input_spacing">8dp</dimen>
+
+    <dimen name="card_padding">12dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="card_corner_radius">8dp</dimen>
+    <dimen name="card_horizontal_margin">12dp</dimen>
+    <dimen name="card_vertical_margin">8dp</dimen>
+    <dimen name="item_horizontal_padding">16dp</dimen>
+    <dimen name="item_vertical_padding">24dp</dimen>
+    <dimen name="item_chevron_margin">16dp</dimen>
+    <dimen name="item_expanded_margin">32dp</dimen>
+
+    <dimen name="icon_current_semester_size">36dp</dimen>
+    <dimen name="icon_current_semester_collapsed">16dp</dimen>
+    <dimen name="icon_current_semester_expanded">12dp</dimen>
+
+    <dimen name="textTitleSize">20dp</dimen>
+
+    <!-- FILTER PLUGIN -->
+    <dimen name="fab_size">72dp</dimen>
+    <dimen name="fab_size_inset">56dp</dimen>
+    <dimen name="fab_radius">36dp</dimen>
+    <dimen name="fab_radius_inset">28dp</dimen>
+    <dimen name="fab_margin">32dp</dimen>
+    <dimen name="fab_margin_inset">40dp</dimen>
+
+    <dimen name="fab_elevation">16dp</dimen>
+    <dimen name="fab_elevation_2">32dp</dimen>
+    <dimen name="fab_pressed_elevation">8dp</dimen>
+
+    <dimen name="list_item_vertical_padding">24dp</dimen>
+    <dimen name="list_item_horizontal_padding">16dp</dimen>
+
+    <dimen name="filter_layout_padding">32dp</dimen>
+    <dimen name="sheet_peek_height">340dp</dimen>
+    <dimen name="tabs_height">64dp</dimen>
+    <dimen name="tab_item_width">110dp</dimen>
+    <dimen name="thumb_size">40dp</dimen>
+
+    <dimen name="bottom_bar_icon_padding">24dp</dimen>
+    <dimen name="bottom_bar_height">@dimen/fab_size</dimen>
+
+    <!-- INTEGERS -->
+    <integer name="pathAnimDuration">300</integer>
+    <integer name="revealAnimDuration">300</integer>
+    <integer name="settleAnimDuration">300</integer>
+    <integer name="collapseAnimDuration">350</integer>
+
+    <integer name="insetAnimDuration">200</integer>
+    <integer name="loadingAnimDuration">600</integer>
+
+    <integer name="toggleAnimDuration">100</integer>
+
+</resources>

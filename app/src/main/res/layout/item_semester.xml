@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_item_semester"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="@dimen/card_horizontal_margin"
+            android:layout_marginVertical="@dimen/card_vertical_margin"
+            app:cardBackgroundColor="@color/item_bg_collapsed"
+            app:cardElevation="@dimen/card_elevation"
+            app:cardCornerRadius="@dimen/card_corner_radius">
+
+            <FrameLayout
+                android:id="@+id/card_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/scale_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="@dimen/item_horizontal_padding"
+                    android:paddingVertical="@dimen/item_vertical_padding"
+                    android:transformPivotX="0dp">
+
+                    <ImageView
+                        android:id="@+id/chevron"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/name_semester"
+                        android:layout_alignBottom="@id/year_semester"
+                        android:layout_marginEnd="@dimen/item_chevron_margin"
+                        app:srcCompat="@drawable/ic_chevron_right"
+                        app:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/name_semester"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/chevron"
+                        android:text="@string/title_default"
+                        android:textColor="@color/colorPrimary"
+                        style="@style/TextTitle"/>
+
+                    <TextView
+                        android:id="@+id/year_semester"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name_semester"
+                        android:layout_toEndOf="@id/chevron"
+                        android:text="@string/year_default"/>
+
+                    <RelativeLayout
+                        android:id="@+id/expanded_details_semester"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_below="@id/year_semester"
+                        android:layout_alignStart="@id/name_semester"
+                        android:layout_marginTop="@dimen/item_expanded_margin"
+                        android:visibility="gone"
+                        tools:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/description_semester"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@id/btn_edit"
+                            android:text="@string/description_default"/>
+
+                        <ImageButton
+                            android:id="@+id/btn_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@id/btn_delete"
+                            android:background="@android:color/transparent"
+                            android:tint="@android:color/holo_blue_dark"
+                            app:srcCompat="@drawable/ic_mode_edit"/>
+
+                        <ImageButton
+                            android:id="@+id/btn_delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:background="@android:color/transparent"
+                            android:tint="@android:color/holo_red_dark"
+                            app:srcCompat="@drawable/ic_delete"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/item_fg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0"
+                    android:background="@color/item_bg_collapsed"
+                    android:visibility="gone"
+                    tools:visibility="gone" />
+
+            </FrameLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/current_semester"
+        android:layout_width="@dimen/icon_current_semester_size"
+        android:layout_height="@dimen/icon_current_semester_size"
+        android:layout_marginEnd="@dimen/icon_current_semester_expanded"
+        android:layout_gravity="end"
+        app:srcCompat="@drawable/ic_clip"
+        app:tint="@color/colorPrimary" />
+
+</FrameLayout>
